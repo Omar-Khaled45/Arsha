@@ -25,7 +25,7 @@ const toggleMenu = document.querySelector("#header ul.nav");
 let overlay = document.createElement("div");
 header.parentNode.insertBefore(overlay, header);
 
-toggleBtn.addEventListener("touchstart", () => {
+toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("clicked");
   toggleMenu.classList.toggle("show");
   if (
@@ -60,7 +60,7 @@ const dropEndMenu = document.querySelector(
   "#header .navbar .nav-item.dropdown ul.menu .drop-end .deep-menu"
 );
 
-dropdown.addEventListener("touchstart", () => {
+dropdown.addEventListener("click", () => {
   dropdownMenu.classList.toggle("show");
   dropdown.classList.toggle("active");
   if (dropEndMenu.classList.contains("show")) {
@@ -69,7 +69,7 @@ dropdown.addEventListener("touchstart", () => {
   }
 });
 
-dropEnd.addEventListener("touchstart", () => {
+dropEnd.addEventListener("click", () => {
   dropEndMenu.classList.toggle("show");
   dropEnd.classList.toggle("active");
 });

@@ -54,7 +54,7 @@ const toggleMenu = document.querySelector("#header ul.nav");
 let overlay = document.createElement("div");
 header.parentNode.insertBefore(overlay, header);
 
-toggleBtn.addEventListener("touchstart", () => {
+toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("clicked");
   toggleMenu.classList.toggle("show");
   if (
